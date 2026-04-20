@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Planner App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Study Planner App</h1>
+
+    <form id="taskForm">
+        <input type="text" id="title" placeholder="Task Title" required>
+        <input type="text" id="subject" placeholder="Subject" required>
+
+        <!-- START DATE -->
+        <label>Start Date</label>
+        <input type="date" id="startDate" required>
+
+        <!-- DEADLINE -->
+        <label>Deadline</label>
+        <input type="date" id="date" required>
+
+        <button type="submit">Add Task</button>
+    </form>
+
+    <h2>🔔 Reminder</h2>
+    <div id="reminderBox">No urgent tasks.</div>
+
+    <h2>My Tasks</h2>
+    <div id="taskList"></div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
